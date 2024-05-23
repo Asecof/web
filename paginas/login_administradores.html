@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+
+	
+	<title>Bienvenido a Login Administradores</title>
+</head>
+<body style="background-color: #ad99c7">
+
+	<header>
+
+       <input type="checkbox" id="btn-menu">
+       <label for="btn-menu"><img src="../imagenes/menu1.png" width="70px" eigth="100px" alt=""></label>
+
+       <nav class="menu">
+
+             <ul>
+                  
+                  <li><a><img src="../imagenes/logo1.png" width="45" eigth="45"></a></li>
+                  <li><a><h5>Bienvenido Administrador <?php echo $_SESSION['usuario'] ?><a href="cerrar_session.php"><img src="../imagenes/cerrar_sesion.png" width="25" eigth="45"></a></h5></a></li>
+                  
+
+
+             </ul>
+        </nav>
+
+	</header>
+
+
+	<center>
+		<h1>Login Administradores</h1>
+		<br>
+		<h3>Autenticación de Usuario</h3>
+		<center><img src="../imagenes/logo1.png" width="150" eigth="150"></center>
+		<br><br><br>
+
+    	<form action="validar.php" method="post">
+	<table border="0" width="40%" cellspacing="0px">
+		<tr class="fila1" align="center">
+			<td>Usuario</td>
+			<td>Contraseña</td>
+			
+
+		</tr>
+
+		<tr class="fila3" align="center">
+			<td><input type="text" Usuario" name="usuario" size="15" required></input></td>
+			<td><input type="password" Contraseña" name="clave" size="15" required></input></td>
+
+		</tr>
+
+
+	
+	<br><br>		
+
+		
+		<br><br>
+
+		<tr align="center">
+			<br><br>
+
+            <td colspan="2"><input type="image" src="../imagenes/1.png" width="50" eigth="50" value="" class="botoningresar"><br><br></input></td><center>
+			
+				
+				
+	</table>
+		</form>
+
+	</center>
+
+	
+
+</body>
+</html>

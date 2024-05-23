@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Bienvenido a Login Registros</title>
+	<meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="../css/registros.css">
+       
+       <!-- Código imagen de logo en pestaña de página web -->
+        <link rel="icon" type="image/png" href="../imagenes/logo1.png">
+</head>
+<body background="../imagenes/fondo_registro.jpg" width="10" eigth="10" text="white">
+
+	<header>
+		<link rel="stylesheet" type="text/css" href="../css/menu2.css">
+
+       <input type="checkbox" id="btn-menu">
+       <label for="btn-menu"><img src="../imagenes/menu1.gif" width="70px" eigth="100px" alt=""></label>
+
+       <nav class="menu">
+
+             <ul>
+
+				  <li><img src="../imagenes/logo1.png" width="50px" eigth="60px"></a></li>
+                  <li><a href="../index.html">Regresar<img src="../imagenes/regresar.png" width="30px" eigth="40px"></a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                 
+
+
+             </ul>
+        </nav>
+
+	</header>
+     
+	
+		<center><h1>¡Bienvenido!</h1></center>
+	
+	
+	<center><h1>Registro de Nuevos Usuarios</h1></center>
+	<center><img src="../imagenes/logo1.png" width="100" eigth="120"></center>
+
+	<br>
+
+	<form action="../registrar.php" method="post" class="form-registrar">
+		<h2 class="form-titulo">REGISTRATE</h2>
+		<div class="contenedor-inputs">
+			<input type="text" name="nombre" placeholder="Nombre(s)" class="input-48" required>
+			<input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
+			<input type="email" name="correo" placeholder="Correo" class="input-48" required>
+			<input type="text" name="telefono" placeholder="Teléfono 10 digitos" class="input-48" required>
+			<input type="text" name="usuario" placeholder="Ingresa un Usuario" class="input-48" required>
+            <!--<input type="password" name="clave" placeholder="Ingresa una Contraseña" class="input-48" required> -->
+			<input type="submit" value="Registrar" name="submit" class="btn-enviar">
+			<input type="reset" value="Borrar datos" name="reset" class="btn-enviar"> 
+			<!--  <p class="form-link"> ¿Ya estas registrado? <a href="login.html">Ingresa aqui</a></p>  -->
+           
+
+		</div>
+
+
+
+
+	</form>
+
+	<br><br><br>
+
+	
+
+
+
+</body>
+</html>

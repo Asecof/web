@@ -1,0 +1,72 @@
+<?php
+session_start();
+error_reporting(0); //desactivar notificaciones de errores
+$varsesion == $_SESSION['usuario'];
+
+if($varsesion == null || $varsesion = '') {
+	echo 'Usted no esta autorizado para Ingresar';
+	die();
+}
+
+?>
+
+<!DOCTYPE html>
+ <html lang="esp">
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+ 	
+ 	<title>ASECOF@ Estatus de Declaraciones Candelario Alvarez Reyes</title>
+ 	
+ 	<!-- Código imagen de logo en pestaña de página web -->
+        <link rel="icon" type="image/png" href="../imagenes/logo1.png">
+ </head>
+ 
+     <body background="../imagenes/fondo2.jpg" text="white">
+
+ 	<header>
+		<link rel="stylesheet" type="text/css" href="../css/menu2.css">
+
+       <input type="checkbox" id="btn-menu">
+       <label for="btn-menu"><img src="imagenes/menu1.gif" width="70px" eigth="100px" alt=""></label>
+
+       <nav class="menu">
+
+             <ul>
+
+				  <li><img src="../imagenes/logo1.png" width="50px" eigth="60px"></a></li>
+                  <li><h5>Bienvenido Candelario Alvarez Reyes</h5></li>
+                  <li></li>
+                  <li></li>
+                  <li><h3><?php echo $_SESSION['usuario'] ?></h3><a href="../cerrar_session.php">Cerrar sesión<img src="../imagenes/cerrar_sesion.png" width="30" eigth="40"></a></li>
+                 
+
+
+             </ul>
+        </nav>
+
+	</header>
+
+ 	
+		<br>
+
+	<center><h1>"Bienvenido Candelario Alvarez Reyes"</h1></center>
+	<center><h1>Consulte su Estatus Fiscal</h1></center>
+
+	<center><a href="../archivos/.pdf"><img src="../imagenes/consulta_pdf.png" width="80" height="80"></a></center>
+	<center><p>CONSULTAR</p></center>
+	<center><p>Estatus Fiscal</p></center>
+	<br><br><br>
+
+	<center><a href="../archivos/.pdf" download="Estatus_Fiscal.pdf"><img src="../imagenes/descarga_pdf.png"></a></center>
+	<center><p>DESCARGAR</p></center>
+	<center><p>Estatus Fiscal</p></center>
+
+
+
+
+<br><br><br><br><br><br>
+	
+ 
+ </body>
+ </html>

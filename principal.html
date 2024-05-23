@@ -1,0 +1,114 @@
+<?php
+session_start();
+error_reporting(0); //desactivar notificaciones de errores
+$varsesion == $_SESSION['usuario'];
+
+if($varsesion == null || $varsesion = '') {
+	echo 'Usted no esta autorizado para Ingresar';
+	die();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+	<title>Bienvenido a Nomina y Consulta de Usuarios</title>
+	
+	<!-- Código imagen de logo en pestaña de página web -->
+        <link rel="icon" type="image/png" href="../imagenes/logo1.png">
+</head>
+<body background="imagenes/fondo.jpg" width="100" eigth="100">
+
+	<header>
+		<link rel="stylesheet" type="text/css" href="css/menu2.css">
+
+       <input type="checkbox" id="btn-menu">
+       <label for="btn-menu"><img src="imagenes/menu1.gif" width="70px" eigth="100px" alt=""></label>
+
+       <nav class="menu">
+
+             <ul>
+
+				  <li><img src="../imagenes/logo1.png" width="50px" eigth="60px"></a></li>
+                  <li><a href="tabla.php"><h4>Consultar Usuarios Registrados</h4></a></li>
+                  <li><a href="index_subirarchivos.php"><h4>Subir y/o Eliminar Estatus Fiscales</h4></a></li>
+                  <li></li>
+                  <li><h3><?php echo $_SESSION['usuario'] ?></h3><a href="cerrar_session.php">Cerrar sesión<img src="../imagenes/cerrar_sesion.png" width="30" eigth="40"></a></li>
+                 
+
+
+             </ul>
+        </nav>
+
+	</header>
+	
+
+		
+	<center>
+		<h1>Sistema de Nómina</h1>
+		<center><img src="../imagenes/logo1.png" width="90" eigth="110"></center>
+		
+		<br><br><br>
+
+    	<form action="nomina.php" method="post">
+	<table border="0" width="90%" cellspacing="0px">
+		<tr class="fila1" align="center">
+			<td>Nómina</td>
+			<td>Días Trabajados</td>
+			<td>Horas Diurnas</td>
+			<td>Horas Nocturnas</td>
+			<td>Horas Dominicales</td>
+			<td>Bonificaciones</td>
+			<td>Prestamo</td>
+
+		</tr>
+
+		<tr class="fila2" align="center">
+			<td>
+				<select name="nominas">
+					<option value="a"> Miriam Reyes Merlos </option>
+					<option value="b"> Miguel Angel Rivero </option>
+					<option value="c"> Rogelio Reyes </option>
+					<option value="d"> Magali Reyes Merlos </option>
+					<option value="e"> Vany Bravo </option>
+					<option value="f"> Ernesto Mercado </option>
+					<option value="g"> Carlos Pineda </option>
+					<option value="h"> Ana Lucia Rojas </option>
+					<option value="i"> Roberto Sanchez </option>
+					<option value="j"> Pedro Martinez </option>
+				</select>
+
+				</td>
+
+			<td><input type="text" name="dias" size="5" required></input></td>
+			<td><input type="text" name="diurnas" size="5" required></input></td>
+			<td><input type="text" name="nocturnas" size="5" required></input></td>
+			<td><input type="text" name="dominicales" size="5" required></input></td>
+			<td><input type="text" name="bonificaciones" required></input></td>
+			<td><input type="text" name="prestamo" required></input></td>
+
+		</tr>
+
+		<tr align="right">
+			<td colspan="7"><input type="submit" value="Calcular pago" class="botonnomina"></input>
+	</table>
+		</form>
+
+	</center>
+
+	<br>
+
+    <center><h2 class="fila1" whidth="90%">Consultar, Modificar o Eliminar Usuarios Registrados</h2></center>
+    <br>
+    
+
+	<br><br><br><br><br>
+
+
+
+
+</body>
+</html>

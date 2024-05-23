@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Bienvenido a Registros de Usuarios</title>
+	<meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="../css/registros.css">
+</head>
+<body text="white">
+
+	<br>
+
+	<center><h1>Bienvenido "Administrador"</h1></center>
+	<center><img src="../imagenes/logo1.png" width="90px" eigth="120px"></center>
+
+	<br><br>
+
+	<form action="registrar.php" method="post" class="form-registrar">
+		<h2 class="form-titulo">REGISTRAR NUEVO USUARIO</h2>
+		<div class="contenedor-inputs">
+			<input type="text" name="nombre" placeholder="Nombre(s)" class="input-48" required>
+			<input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
+			<input type="email" name="correo" placeholder="Correo" class="input-48" required>
+			<input type="text" name="telefono" placeholder="Teléfono" class="input-48" required>
+			<input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+			<input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
+			<input type="submit" value="Registrar" class="btn-enviar">
+			<p class="form-link"> Consultar, Modificar o Eliminar Usuarios Registrados? <a href="tabla.php">Ingresa aqui</a></p>
+
+
+		</div>
+
+
+
+
+	</form>
+
+
+
+</body>
+</html>

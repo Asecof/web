@@ -1,0 +1,38 @@
+ <?php
+session_start();
+error_reporting(0); //desactivar notificaciones de errores
+$varsesion == $_SESSION['usuario'];
+
+if($varsesion == null || $varsesion = '') {
+	echo 'Usted no esta autorizado para Ingresar';
+	die();
+}
+
+?>
+
+ <!DOCTYPE html>
+ <html lang="esp">
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+ 	
+ 	<title>Bienvenido a Estatus de Declaraciones</title>
+ </head>
+ <body background="imagenes/fondo2.jpg" text="white">
+
+ 	<h3>Bienvenido Usuario <?php echo $_SESSION['usuario'] ?></h3><a href="cerrar_session.php"><img src="../imagenes/cerrar_sesion.png" width="40" eigth="60"></a>
+		<h9>Cerrar sesión</h9>
+		<br>
+
+	<center><h1>"Bienvenido Usuario"</h1></center>
+	<center><h1>Consulte su Estatus de Declaraciones</h1></center>
+
+	<div>
+
+
+
+<br><br><br><br><br><br>
+	
+ 
+ </body>
+ </html>
